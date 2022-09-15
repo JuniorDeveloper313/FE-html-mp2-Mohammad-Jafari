@@ -1,0 +1,298 @@
+/*CSS för Startsida*/
+body{
+    background-color: rgb(239,233,225);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+  }
+.flexbox-container{
+    display: flex;
+    height: 120px;
+    width:100%; 
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+   
+    
+
+}
+.flexbox-container > div{
+    padding:2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+     
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 18rem 30rem 20rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+.grid-container div:nth-child(1){
+    
+    grid-row-start:1 ;
+    grid-row-end:2 ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 2rem;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 0;
+   
+    
+}
+.grid-container div:nth-child(2){
+    grid-row-start:2 ;
+    grid-row-end:3 ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    
+   
+    
+}
+.grid-container div:nth-child(3){
+    background-color: rgb(0,46,66);
+    grid-row-start:3 ;
+    grid-row-end:4 ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    
+   
+}
+a{
+    text-decoration: none;
+    color: rgb(232,94,111);
+    transition: color .3s;
+   
+}
+a:hover{
+    color: black;
+
+    
+}
+
+.logo{
+    height:auto;
+    width: 500px;
+}
+.img1{
+    max-width: 100%;
+    height: auto;
+    
+}
+.img2{
+    width: 100%;
+    height: 100%;
+}
+.img3{
+    width: 90px;
+    height:90px;  
+}
+.h1{
+    color: rgb(230,140,52);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.p-start1{
+    font-size:large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+    
+}
+.h2{
+    color:rgb(239,233,225);
+    margin-top: 4rem;
+    text-align: center;
+    font-size:xx-large;
+
+}
+.p-start2{
+    color:rgb(239,233,225);
+    font-size:large;
+    text-align: center;
+    font-size:x-large;
+
+}
+.p-start3{
+    color:rgb(18,50,82);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.grid-container-footer{
+    display:grid;
+    grid-template-rows: 11rem  ;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+    box-shadow: 0 4px 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item1-footer{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    box-shadow: 0 4px 1px 1px  0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-bottom:1rem;
+}
+/*_____________________________________________________________________________*/
+/* CSS för Meny sida*/
+.grid-container-meny{
+    display:grid;
+    grid-template-rows: 25rem 25rem  ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+
+}
+.item1{
+    margin: 1rem;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    cursor: pointer;
+    
+   
+}
+.item2{
+    margin: 1rem;
+    background-color:white;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    cursor: pointer;
+    
+}
+.item3{
+    margin: 1rem;
+    background-color:white;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.item4{
+    margin: 1rem;
+    background-color:white;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.item5{
+    margin: 1rem;
+    background-color:white;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    cursor: pointer;
+}
+
+.item6{
+    margin: 1rem;
+    background-color:white;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    cursor: pointer;
+}
+.img3{
+    width: 90px;
+    height:90px;  
+    text-align: right;
+}
+.p-start3{
+    color:rgb(18,50,82);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-align: center;
+}
+.grid-container-meny-footer{
+    display:grid;
+    grid-template-rows: 180px  ;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    box-shadow: 0 4px 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item1-footer{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+   
+}
+/*________________________________________________________________________________*/
+/* CSS för Boka Bord sida*/
+.grid-container-boka{
+    display:grid;
+    grid-template-rows: 41.5rem  ;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.item1-1{
+    margin: 1rem;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align:left;
+    
+
+}
+form{
+	font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: aliceblue;
+	text-align:left;
+	padding-top: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.knapp{
+    background-color: whitesmoke;
+    border-radius: 4rem;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
